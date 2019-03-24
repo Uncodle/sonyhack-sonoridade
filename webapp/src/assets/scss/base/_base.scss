@@ -1,0 +1,13 @@
+*,*:before, *:after {
+    box-sizing: border-box !important; 
+}
+
+html, body {
+    font-family: "Comfortaa" !important;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    font-family: "Comfortaa" !important;
+}

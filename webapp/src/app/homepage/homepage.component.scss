@@ -1,0 +1,150 @@
+.header {
+    display: flex;
+    padding: 20px 45px;
+    align-content: center;
+    justify-content: space-between;
+    background-color: #fff;
+
+    .header__info {
+        .btn {
+            height: auto;
+            padding: 12px 45px;
+            line-height: normal;
+            border-radius: 24px;
+            text-transform: capitalize;
+            color: #f7e658;
+            font-size: 22px;
+        }
+    }
+    
+    .header__social {
+        .social__item {
+            float: left;
+            width: 46px;
+            height: 46px;
+            margin-right: 10px;
+
+            display: flex;
+            border-radius: 50%;
+            justify-content: center;
+            background-color: #770295;
+
+            &:hover {
+                opacity: .7;
+            }
+
+            &.social--facebook {
+                svg {
+                    width: 12px;
+                }
+            }
+
+            svg {
+                width: 20px;
+            }
+
+            path {
+                fill: #f7e658;
+            }
+        }
+        
+    }
+}
+
+.form__login {
+    padding-top: 65px;
+    padding-left: 65px;
+
+    
+    .input-field{
+        margin-bottom: 0;
+    }
+
+    .input-field>label {
+        color: #000;
+        font-size: 18px;
+        margin-top: 2px;
+        padding-left: 25px;
+    }
+    
+    .input-field>label.active {
+        margin-top: -10px;
+        color: #000 !important;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        padding: 0 25px;
+        border-radius: 20px;
+        background-color: #fff;
+        border: 1px solid #770295;
+        border-color: #770295 !important;
+
+    }
+
+    .form__actions {
+        .btn {
+            width: 100%;
+            color: #f7e658;
+            font-size: 22px;
+            padding: 14px;
+            height: auto;
+            line-height: normal;
+            border-radius: 24px;
+            text-transform: capitalize;
+            font-family: "Comfortaa" !important;
+        }
+    }
+}
+
+.block__mission {
+    padding-top: 45px;
+    
+    .logo {
+        width: 510px;
+    }
+    
+    .block__content {
+        p {
+            color: #fff;
+            font-size: 20px;
+            margin-bottom: 23px;
+            
+            &:first-of-type {
+                font-size: 26px;
+                line-height: 36px;
+            }
+        }
+    }
+}
+
+
+@media(min-width: 768px){
+
+    .main {
+        overflow: hidden;
+        background-color: #770295;
+    
+        
+        .bg--yellow {
+            position: relative;
+            
+            &:after {
+                top: 0;
+                left: 100%;
+                width: 100%;
+                height: 100%;
+                content: "";
+                position: absolute;
+                background-color: #f7e658;
+            }
+        }
+    }
+    
+    
+    .block__mission,
+    .form__login {
+        height: 100vh;
+    }
+}
