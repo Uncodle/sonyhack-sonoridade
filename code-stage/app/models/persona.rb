@@ -4,5 +4,5 @@ class Persona < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   has_many :fields
-  has_many :music_genders
+  has_many :musical_genders
 end
