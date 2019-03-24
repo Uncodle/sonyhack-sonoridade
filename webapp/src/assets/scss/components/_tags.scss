@@ -1,0 +1,33 @@
+.tags {
+    .tag {
+        opacity: .8;
+        padding: 8px 12px;
+        border-radius: 24px;
+        margin-right: 8px;
+        color: #f7e658;
+        display: inline-block;
+        margin-bottom: 8px;
+        background-color: #bb81ca;
+
+        transition: background-color ease-in-out .3s;
+
+        &:hover,
+        .is--active {
+            opacity: 1;
+            background-color: #770295;
+        }
+    }
+
+    &--reverse {
+        .tag {
+            color: #770295;
+            font-weight: 700;
+            background-color: #f7e658;
+
+            
+        &:hover {
+            background-color: darken(#f7e658, 5%);
+        }
+        }
+    }
+}                  

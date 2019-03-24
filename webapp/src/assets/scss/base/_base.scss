@@ -1,0 +1,23 @@
+*,*:before, *:after {
+    box-sizing: border-box !important; 
+}
+
+html, body {
+    font-family: "Comfortaa" !important;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    font-family: "Comfortaa" !important;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: #fff;
+    background: #770295;
+  }
+  
+  ::selection {
+    color: #fff; 
+    background: #770295;
+  }
