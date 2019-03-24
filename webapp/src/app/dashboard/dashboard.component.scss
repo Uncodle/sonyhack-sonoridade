@@ -5,8 +5,44 @@
 }
 
 .block__profile {
-
     text-align: center;
+
+    &.top-profile {
+        margin-top: 25px;
+
+       h2 {
+            margin-top: 0;
+            font-size: 18px;
+            color: #770295;
+            font-weight: 700;
+            text-align: left;
+       }
+
+       .top-profile__picture {
+            width: 150px;
+            margin: 0 auto 25px;
+
+            img {
+                border-radius: 50%;
+            }
+        }
+
+        .btn {
+            background-color: #fff !important;
+            color: #7b1fa2 !important;
+            box-shadow: none;
+            border: 2px solid #7b1fa2;
+            border-radius: 20px;
+            font-weight: bold;
+            line-height: 1;
+            padding: 0 24px;
+
+            &:hover {
+                background-color: #7b1fa2 !important;
+                color: #fff !important;
+            }
+        }
+    }
 
     p {
         margin-bottom: 15px;
@@ -81,7 +117,6 @@
         color: #c9c9c9;
     }
 }
-
 
 .block__timeline {
 	.tabs {

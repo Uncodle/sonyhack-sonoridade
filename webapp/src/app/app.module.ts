@@ -8,11 +8,13 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeaderComponent } from './header/header.component';
 import { MulheresNaMusicaComponent } from './mulheres-na-musica/mulheres-na-musica.component';
+import { LoginComponent } from './login/login.component';
 
 const appRoutes = [
    { path: '', component: HomepageComponent },
    { path: 'dashboard', component: DashboardComponent },
-   { path: 'mulheres-na-musica/mahmundi', component: MulheresNaMusicaComponent }
+   { path: 'mulheres-na-musica/mahmundi', component: MulheresNaMusicaComponent },
+   { path: 'login', component: LoginComponent }
 ]
 
 @NgModule({
@@ -21,7 +23,8 @@ const appRoutes = [
     HomepageComponent,
     DashboardComponent,
     HeaderComponent,
-    MulheresNaMusicaComponent
+    MulheresNaMusicaComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
