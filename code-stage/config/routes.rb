@@ -6,6 +6,8 @@ Rails.application.routes.draw do
     namespace :v1 do
       post 'new_user', to: 'users#new_user'
       post 'new_persona', to: 'personas#new_persona'
+      get 'questions_field', to: 'questions#questions_field'
+      get 'questions_musical', to: 'questions#questions_musical'
     end
   end
 
