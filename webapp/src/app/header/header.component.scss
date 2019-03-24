@@ -1,10 +1,24 @@
 .header {
     height: auto;
     line-height: 1;
-    margin-bottom: 15px;
+    margin-bottom: 65px;
+
+    box-shadow: none;
+    padding: 20px 65px;
+    background-color: #fff;   
+    border-bottom: 2px solid #ececec;
     
     display: flex;
+    align-items: center;
     justify-content: space-between;
+
+    .header__logo {
+        width: 295px;
+    }
+
+    .header__brand {
+        width: 95px;
+    }
 }
 
 .header__info {

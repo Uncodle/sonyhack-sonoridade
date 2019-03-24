@@ -1,0 +1,254 @@
+.block {
+    padding: 16px;
+    border-radius: 24px;
+    border: 2px solid #ececec;
+}
+.block__profile {
+
+    text-align: center;
+    
+    p {
+        margin-bottom: 15px;
+    }
+    
+    .profile__name {
+        font-size: 20px;
+        font-weight: 700;
+        
+    }
+    
+    .profile__nickname {
+       color:#c9c9c9;
+    }
+    
+    .profile__stars {
+        
+         font-weight: 700;
+        
+        strong {
+            font-size: 20px;
+           
+            color: #770295;
+            display: block;
+            line-height: 42px;
+        }
+    }
+    
+    .profile__picture {
+        width: 120px;
+        margin: 0 auto 25px;
+
+        height: 120px;
+        padding: 10px;
+        overflow: hidden;
+        border-radius: 50%;
+        text-align: center;
+        background-color: #770295;
+        border: 1px solid #770295;
+        
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        
+        svg {
+            width: 80px;
+            margin-bottom: -15px;
+            
+            path {
+                fill: #f7e658;
+            }   
+        }
+    }
+}
+
+.block__comment {
+    text-align: center;
+    
+    textarea {
+        padding: 20px;
+        color: #f7e658;
+        border-radius: 12px;
+        background-color: #770295;
+        
+        + label {
+            color: #f7e658;
+        }
+    }
+
+    .btn {
+        height: auto;
+        padding: 6px 28px;
+        line-height: normal;
+        border-radius: 24px;
+        text-transform: capitalize;
+        color: #f7e658;
+        font-size: 22px;
+    }
+}
+
+.block__profile {
+    
+    p {
+        margin-bottom: 15px;
+    }
+    
+    .profile__name {
+        font-size: 20px;
+        font-weight: 700;
+        
+    }
+    
+    .profile__nickname {
+       color:#c9c9c9;
+    }
+    
+    .profile__stars {
+        
+         font-weight: 700;
+        
+        strong {
+            font-size: 20px;
+           
+            color: #770295;
+            display: block;
+            line-height: 42px;
+        }
+    }
+}
+
+.block__trends {
+    .block__title {
+        font-weight: 700;
+        color: #770295;
+        margin-top: 0;
+        font-size: 16px;
+    }
+
+    .tags {
+        li:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    .trends__total {
+        font-size: 12px;
+        color: #c9c9c9;
+    }
+}
+
+.block__timeline {
+	.tabs {
+		margin: 25px 0;
+		border-radius: 16px;
+        border: 2px solid #ececec;
+        
+        
+		.tab {
+            text-transform: initial;
+            transition: all .3s;
+            
+			a {
+				color: #bababa;
+				font-weight: bold;
+				font-size: 18px;
+			}
+            
+			&.active,
+			&:hover {
+                background-color: #f7e658;
+                
+				a {
+					color: #770295;
+				}
+			}
+		}
+	}
+}
+
+.post {
+    padding: 16px;
+    border-radius: 24px;
+    border: 2px solid #ececec;
+
+
+    &:not(:last-child){
+        margin-bottom: 20px;
+    }
+    
+    .post__author {
+        .author__picture {
+            width: 30px;
+            height: 30px;
+            overflow: hidden;
+            border-radius: 50%;
+            background-color: #770295;
+            border: 1px solid #770295;
+            float: left;
+            margin: 0 16px 0 0 ;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+                
+            svg {
+                width: 25px;
+                margin-top: 8px;
+
+                path {
+                    fill: #f7e658;
+                }   
+            }
+        }
+        
+        .author__name {
+            font-weight: 700;
+            font-size: 12px;
+        }
+
+        .post__date {
+            font-size: 10px;
+            color: #c9c9c9;
+            margin: 5px 0 20px 0;
+            
+        }
+    }
+
+    .post__content {
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 15px;
+    } 
+
+    .post__actions {
+        a {
+            color: #c9c9c9;
+            font-size: 12px;
+        }
+
+        li {
+            display: inline-block;
+        }
+        
+        svg {
+            width: 25px;
+            
+            path {
+                fill: #770295;
+            }
+        }
+
+        .action__tags {
+            float: right;
+
+            .tag {
+                color: #770295;
+                font-size: 14px;
+                font-weight: bold;
+
+                &:not(:last-child){
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
