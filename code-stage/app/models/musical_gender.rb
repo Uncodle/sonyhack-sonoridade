@@ -1,0 +1,2 @@
+class MusicalGender < ApplicationRecord
+end
