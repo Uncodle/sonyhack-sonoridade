@@ -34,57 +34,59 @@
             
             <div class="col s12 xl6 bg--yellow">
                
-              <form class="form__login">
+              <form class="form__login" [formGroup]="form" (ngSubmit)="register()">
                   <section class="step--1">
 
                       <div class="row">
                           <div class="input-field col s6">
-                            <input  id="name" type="text" class="validate">
+                            <input [formControl]="name" id="name" type="text" class="validate">
                             <label for="name">Nome</label>
                           </div>
+
+                          Value: {{ name.value }}
       
                           <div class="input-field col s6">
-                              <input  id="lastname" type="text" class="validate">
+                              <input  [formControl]="lastname" id="lastname" type="text" class="validate">
                               <label for="lastname">Sobrenome</label>
                             </div>
                           </div>
       
                           <div class="row">
                             <div class="input-field col s12">
-                              <input id="email" type="email" class="validate">
+                              <input [formControl]="email" id="email" type="email" class="validate">
                               <label for="email">E-mail</label>
                             </div>
                           </div>
       
                         <div class="row">
                           <div class="input-field col s12">
-                            <input id="password" type="password" class="validate">
+                            <input [formControl]="password" id="password" type="password" class="validate">
                             <label for="password">Password</label>
                           </div>
                         </div> 
                         
                         <div class="row">
                             <div class="input-field col s6">
-                              <input  id="birthday" type="text" class="validate">
+                              <input [formControl]="birthday" id="birthday" type="text" class="validate">
                               <label for="birthday">Data de nascimento</label>
                             </div>
       
                             <div class="input-field col s6">
-                                <input  id="gender" type="text" class="validate">
+                                <input [formControl]="gender" id="gender" type="text" class="validate">
                                 <label for="gender">Gênero</label>
                               </div>
                           </div>
       
                           <div class="row">
                               <div class="input-field col s12">
-                                <input id="address" type="text" class="validate">
+                                <input [formControl]="address" id="address" type="text" class="validate">
                                 <label for="address">Endereço</label>
                               </div>
                           </div> 
       
                           <div class="row">
                               <div class="input-field col s12">
-                                <input id="city" type="text" class="validate">
+                                <input [formControl]="city" id="city" type="text" class="validate">
                                 <label for="city">Cidade</label>
                               </div>
                           </div> 

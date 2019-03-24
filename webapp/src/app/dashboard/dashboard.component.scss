@@ -1,16 +1,16 @@
 .block {
-    padding: 16px;
+    padding: 20px;
     border-radius: 24px;
     border: 2px solid #ececec;
 }
 .block__profile {
 
     text-align: center;
-    
+
     p {
         margin-bottom: 15px;
     }
-    
+
     .profile__name {
         font-size: 20px;
         font-weight: 700;
@@ -82,39 +82,23 @@
         border-radius: 24px;
         text-transform: capitalize;
         color: #f7e658;
-        font-size: 22px;
+        font-size: 20px;
+    }
+
+    .input-field.col label {
+        margin-top: 10px;
+        padding-left: 25px;
+        
+        &.active {
+            color: #000 !important;
+            margin-top: -5px;
+            font-weight: bold;
+             padding-left: 0;
+        }
+        
     }
 }
 
-.block__profile {
-    
-    p {
-        margin-bottom: 15px;
-    }
-    
-    .profile__name {
-        font-size: 20px;
-        font-weight: 700;
-        
-    }
-    
-    .profile__nickname {
-       color:#c9c9c9;
-    }
-    
-    .profile__stars {
-        
-         font-weight: 700;
-        
-        strong {
-            font-size: 20px;
-           
-            color: #770295;
-            display: block;
-            line-height: 42px;
-        }
-    }
-}
 
 .block__trends {
     .block__title {
@@ -223,6 +207,18 @@
         a {
             color: #c9c9c9;
             font-size: 12px;
+            transition: all .3s;
+            display: inline-block;
+
+            &:hover {
+                opacity: .85;
+              
+                svg {
+                    transform: scale(1.1);
+                    -webkit-transform: scale(1.1);
+                    -moz-transform: scale(1.1);   
+                }
+            }
         }
 
         li {
@@ -231,9 +227,11 @@
         
         svg {
             width: 25px;
+            transition: all .3s;
             
             path {
                 fill: #770295;
+                transition: all .3s;
             }
         }
 
@@ -250,5 +248,18 @@
                 }
             }
         }
+
+        .likes__counter,
+        .comments__counter {
+            top: -8px;
+            margin: 0 10px;
+            position: relative;
+        }
+    }
+}
+
+@media(max-width: 1200px){
+    .block__profile {
+        margin-bottom: 25px;
     }
 }

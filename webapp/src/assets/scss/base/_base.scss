@@ -12,6 +12,10 @@ input[type="password"] {
     font-family: "Comfortaa" !important;
 }
 
+img {
+    max-width: 100%;
+}
+
 ::-moz-selection { /* Code for Firefox */
     color: #fff;
     background: #770295;
@@ -21,3 +25,11 @@ input[type="password"] {
     color: #fff; 
     background: #770295;
   }
+
+  @media(max-width: 768px){
+    .container {
+      width: 100% !important;
+    }
+  }
+
+ 

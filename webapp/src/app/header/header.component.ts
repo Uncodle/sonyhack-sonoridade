@@ -10,6 +10,9 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  setTimeout(function(){
+    document.querySelector('.jsLogo').classList.remove('tada');
+  }, 1000);
   }
 
 }

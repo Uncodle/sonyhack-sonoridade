@@ -9,7 +9,7 @@
         margin-bottom: 8px;
         background-color: #bb81ca;
 
-        transition: background-color ease-in-out .3s;
+        transition: all ease-in .3s;
 
         &:hover,
         .is--active {
@@ -23,6 +23,7 @@
             color: #770295;
             font-weight: 700;
             background-color: #f7e658;
+            transition: all ease-in .3s;
 
             
         &:hover {
