@@ -1,0 +1,37 @@
+.block__comment {
+    text-align: center;
+    
+    .materialize-textarea {
+        padding: 20px;
+        color: #f7e658;
+        border-radius: 12px;
+        background-color: #770295;
+        
+        + label {
+            color: #f7e658;
+        }
+    }
+
+    .btn {
+        height: auto;
+        padding: 6px 28px;
+        line-height: normal;
+        border-radius: 24px;
+        text-transform: capitalize;
+        color: #f7e658;
+        font-size: 20px;
+    }
+
+    .input-field.col label {
+        margin-top: 10px;
+        padding-left: 25px;
+        
+        &.active {
+            color: #000 !important;
+            margin-top: -5px;
+            font-weight: bold;
+             padding-left: 0;
+        }
+        
+    }
+}

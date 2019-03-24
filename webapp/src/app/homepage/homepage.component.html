@@ -12,7 +12,7 @@
     </div>
 
     <div class="header__info">
-      <a class="btn purple darken-2 waves-effect waves-light" href="">Entrar</a>
+      <a class="btn purple darken-2 waves-effect waves-light" href="dashboard">Entrar</a>
     </div>
 </header>
 
@@ -26,67 +26,65 @@
     
                       <img class="logo" src="assets/images/logo.svg" alt="">
     
-                      <p>Lorem ipsum dolor sit amet consecteuer odispicing elit</p>
-                      <p>Lorem ipsum dolor</p>
+                      <p>Uma rede de conexão entre mulheres na música.</p>
+                      <p>Você está pronta para mudar o mundo?</p>
                     </div>
                   </div>  
               </div>
             
             <div class="col s12 xl6 bg--yellow">
                
-              <form class="form__login" [formGroup]="form" (ngSubmit)="register()">
+              <form class="form__login" name="form" [formGroup]="form" (ngSubmit)="register()">
                   <section class="step--1">
 
                       <div class="row">
                           <div class="input-field col s6">
-                            <input [formControl]="name" id="name" type="text" class="validate">
+                            <input formControlName="name" id="name" type="text" class="validate">
                             <label for="name">Nome</label>
                           </div>
-
-                          Value: {{ name.value }}
       
                           <div class="input-field col s6">
-                              <input  [formControl]="lastname" id="lastname" type="text" class="validate">
+                              <input  formControlName="lastname" id="lastname" type="text" class="validate">
                               <label for="lastname">Sobrenome</label>
                             </div>
                           </div>
       
                           <div class="row">
                             <div class="input-field col s12">
-                              <input [formControl]="email" id="email" type="email" class="validate">
+                              <input formControlName="email" id="email" type="email" class="validate">
                               <label for="email">E-mail</label>
                             </div>
                           </div>
       
                         <div class="row">
                           <div class="input-field col s12">
-                            <input [formControl]="password" id="password" type="password" class="validate">
+                            <input formControlName="password" id="password" type="password" class="validate">
                             <label for="password">Password</label>
                           </div>
                         </div> 
                         
                         <div class="row">
                             <div class="input-field col s6">
-                              <input [formControl]="birthday" id="birthday" type="text" class="validate">
+                              <input formControlName="birthday" id="birthday" type="text" class="validate">
                               <label for="birthday">Data de nascimento</label>
                             </div>
       
                             <div class="input-field col s6">
-                                <input [formControl]="gender" id="gender" type="text" class="validate">
+                                <input formControlName="gender" id="gender" type="text" class="validate">
                                 <label for="gender">Gênero</label>
                               </div>
                           </div>
       
                           <div class="row">
                               <div class="input-field col s12">
-                                <input [formControl]="address" id="address" type="text" class="validate">
+                                <input id="address" type="text" class="validate">
                                 <label for="address">Endereço</label>
                               </div>
                           </div> 
       
                           <div class="row">
                               <div class="input-field col s12">
-                                <input [formControl]="city" id="city" type="text" class="validate">
+                                <input id="city" type="text" class="validate">
                                 <label for="city">Cidade</label>
                               </div>
                           </div> 
