@@ -3,4 +3,6 @@ class Persona < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+  has_many :fields
+  has_many :music_genders
 end
